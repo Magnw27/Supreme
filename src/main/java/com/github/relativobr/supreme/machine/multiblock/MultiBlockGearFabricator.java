@@ -31,7 +31,7 @@ public class MultiBlockGearFabricator extends MultiBlockMachine implements NotPl
 
   public static final SlimefunItemStack GEAR_FABRICATOR = new SupremeItemStack("SUPREME_MULTIBLOCK_GEAR",
       Material.SMITHING_TABLE, "&eEquipment Factory", "", "&7&oYou can craft weapons, armor and tools here!", "",
-      "&aMultiblock Machine"
+      "&aMultiblock Machine")
   public static final RecipeType MACHINE_GEAR_FABRICATOR = new RecipeType(
       new NamespacedKey(Supreme.inst(), "SUPREME_MULTIBLOCK_GEAR_KEY"), GEAR_FABRICATOR);
 
