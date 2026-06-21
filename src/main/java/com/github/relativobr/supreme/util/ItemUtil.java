@@ -44,7 +44,7 @@ public class ItemUtil {
 
         if (typeSection == null) {
             Supreme.inst().log(Level.SEVERE,
-                    "配置 \"quarry-custom-output\" 缺失!");
+                    "Configuration \"quarry-custom-output\" is missing!");
             return null;
         }
 
@@ -92,7 +92,7 @@ public class ItemUtil {
             }
         } else {
             Supreme.inst().log(Level.SEVERE,
-                    "配置 " + itemPath + " 缺失!");
+                    "Configuration " + itemPath + " is missing!");
         }
 
         return SupremeQuarryOutput.builder().outputItems(outputItems).build();
@@ -120,7 +120,7 @@ public class ItemUtil {
 
         if (getSupremeOptions().isLimitProductionQuarry()) {
             lore.add(" ");
-            lore.add(ChatColor.GOLD + "已限制产能");
+            lore.add(ChatColor.GOLD + "Production capped");
         }
 
         lastElementLore.ifPresent(lore::addAll);
@@ -223,29 +223,29 @@ public class ItemUtil {
         switch (mobTechType) {
             case MUTATION_BERSERK:
             case ROBOTIC_ACCELERATION:
-                return ChatColor.GREEN + tierString + "倍 " + ChatColor.GRAY + " 速度" +
-                    ChatColor.GRAY + "增加" + ChatColor.RED + tierString + "0%" + ChatColor.GRAY + " 电力消耗";
+                return ChatColor.GREEN + tierString + "x " + ChatColor.GRAY + " Speed" +
+                    ChatColor.GRAY + " Increases power consumption by " + ChatColor.RED + tierString + "0%" + ChatColor.GRAY;
             case MUTATION_LUCK:
             case ROBOTIC_CLONING:
                 return buildLoreTypeLuckAndCloning(tier);
             case MUTATION_INTELLIGENCE:
             case ROBOTIC_EFFICIENCY:
-                return ChatColor.GRAY + "减少" + ChatColor.GREEN + tierString + "0%" + ChatColor.GRAY + " 电力消耗";
+                return ChatColor.GRAY + "Reduces power consumption by " + ChatColor.GREEN + tierString + "0%" + ChatColor.GRAY;
             case SIMPLE:
             default:
-                return ChatColor.GRAY + "增加处理速度";
+                return ChatColor.GRAY + "Increases processing speed";
         }
     }
 
     private static String buildLoreTypeLuckAndCloning(Integer tier) {
         if (tier >= 9) {
-            return ChatColor.GREEN + "+4 物品组" + ChatColor.GRAY + "复制";
+            return ChatColor.GREEN + "+4 Item Groups" + ChatColor.GRAY + " Duplication";
         } else if (tier >= 6) {
-            return ChatColor.GREEN + "+3 物品组" + ChatColor.GRAY + "复制";
+            return ChatColor.GREEN + "+3 Item Groups" + ChatColor.GRAY + " Duplication";
         } else if (tier >= 4) {
-            return ChatColor.GREEN + "+2 物品组" + ChatColor.GRAY + "复制";
+            return ChatColor.GREEN + "+2 Item Groups" + ChatColor.GRAY + " Duplication";
         } else {
-            return ChatColor.GREEN + "+1 物品组" + ChatColor.GRAY + "复制";
+            return ChatColor.GREEN + "+1 Item Group" + ChatColor.GRAY + " Duplication";
         }
     }
 
@@ -256,16 +256,16 @@ public class ItemUtil {
             case ROBOTIC_ACCELERATION:
             case MUTATION_INTELLIGENCE:
             case ROBOTIC_EFFICIENCY:
-                return ChatColor.GRAY + "处理速度 " + ChatColor.YELLOW
-                        + "(" + tierString + " * 物品组数 * 0.15625)";
+                return ChatColor.GRAY + "Processing Speed " + ChatColor.YELLOW
+                        + "(" + tierString + " * Item Groups * 0.15625)";
             case MUTATION_LUCK:
             case ROBOTIC_CLONING:
-                return ChatColor.GRAY + "处理速度 " + ChatColor.YELLOW
-                        + "(" + Supreme.getSupremeOptions().getMaxAmountTechGenerator() + "x 每组)";
+                return ChatColor.GRAY + "Processing Speed " + ChatColor.YELLOW
+                        + "(" + Supreme.getSupremeOptions().getMaxAmountTechGenerator() + "x per group)";
             case SIMPLE:
             default:
-                return ChatColor.GRAY + "处理速度 " + ChatColor.YELLOW
-                        + "(物品组数 * 0.15625)";
+                return ChatColor.GRAY + "Processing Speed " + ChatColor.YELLOW
+                        + "(Item Groups * 0.15625)";
         }
     }
 
@@ -275,7 +275,7 @@ public class ItemUtil {
                 buildNameTier(mobTechGeneric.getName(), tier), "",
                 buildLoreRadioactivityType(mobTechGeneric.getMobTechType()),
                 buildLoreType(mobTechGeneric.getMobTechType(), tier),
-                buildLoreTypeAmount(mobTechGeneric.getMobTechType(), tier), "", "&3至尊组件");
+                buildLoreTypeAmount(mobTechGeneric.getMobTechType(), tier), "", "&3Supreme Component");
         ItemMeta itemMeta = itemStack.getItemMeta();
         PersistentDataAPI.setInt(itemMeta, new NamespacedKey(Supreme.inst(), "mob_tech_tier"), tier);
         PersistentDataAPI.setString(itemMeta, new NamespacedKey(Supreme.inst(), "mob_tech_type"), mobTechGeneric.getMobTechType().name());
