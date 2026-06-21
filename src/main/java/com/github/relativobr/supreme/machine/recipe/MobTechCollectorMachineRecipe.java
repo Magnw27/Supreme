@@ -38,21 +38,21 @@ public class MobTechCollectorMachineRecipe extends MachineRecipe implements Pred
       displayRecipes.add(
           new CustomItemStack(SupremeComponents.EMPTY_MOBTECH.getType(),
               SupremeComponents.EMPTY_MOBTECH.getDisplayName(),
-              "", "&f需要&b蜜蜂&f在附近", ""));
+              "", "&fRequires &bbee&f nearby", ""));
       displayRecipes.add(ItemUtil.buildItemFromMobTechDTO(BeeTech.SIMPLE_BEE, 0));
     }
     if (supremeOptions.isMobTechEnableIronGolem()) {
       displayRecipes.add(
           new CustomItemStack(SupremeComponents.EMPTY_MOBTECH.getType(),
               SupremeComponents.EMPTY_MOBTECH.getDisplayName(),
-              "", "&f需要&b铁傀儡&f在附近", ""));
+              "", "&fRequires &biron golem&f nearby", ""));
       displayRecipes.add(ItemUtil.buildItemFromMobTechDTO(IronGolemTech.SIMPLE_GOLEM, 0));
     }
     if (supremeOptions.isMobTechEnableZombie()) {
       displayRecipes.add(
           new CustomItemStack(SupremeComponents.EMPTY_MOBTECH.getType(),
               SupremeComponents.EMPTY_MOBTECH.getDisplayName(),
-              "", "&f需要&b僵尸&f在附近", ""));
+              "", "&fRequires &bzombie&f nearby", ""));
       displayRecipes.add(ItemUtil.buildItemFromMobTechDTO(ZombieTech.SIMPLE_ZOMBIE, 0));
     }
     return displayRecipes;
