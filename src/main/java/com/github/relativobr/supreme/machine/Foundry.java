@@ -33,18 +33,18 @@ import org.springframework.scheduling.annotation.Async;
 public class Foundry extends MediumContainerMachine {
 
   public static final SlimefunItemStack FOUNDRY_MACHINE = new SupremeItemStack("SUPREME_FOUNDRY_I", Material.GRINDSTONE,
-      "&b铸造机", "", "&f铸造和合成物品", "",
+      "&bFoundry", "", "&fForge and craft items", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1),
-      UtilEnergy.energyPowerPerSecond(1000), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(1000), "", "&3Supreme Machine");
   public static final ItemStack[] RECIPE_FOUNDRY_MACHINE = new ItemStack[]{SlimefunItems.ELECTRIC_INGOT_FACTORY_3,
       SlimefunItems.ELECTRIC_INGOT_FACTORY_3, SlimefunItems.ELECTRIC_INGOT_FACTORY_3,
       SupremeComponents.INDUCTIVE_MACHINE, SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE,
       SlimefunItems.ELECTRIC_SMELTERY_2, SlimefunItems.PROGRAMMABLE_ANDROID_3, SlimefunItems.ELECTRIC_SMELTERY_2};
 
   public static final SlimefunItemStack FOUNDRY_MACHINE_II = new SupremeItemStack("SUPREME_FOUNDRY_II",
-      Material.GRINDSTONE, "&b铸造机II", "", "&f更强地铸造和合成物品", "",
+      Material.GRINDSTONE, "&bFoundry II", "", "&fForge and craft items more powerfully", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(5),
-      UtilEnergy.energyPowerPerSecond(5000), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(5000), "", "&3Supreme Machine");
   public static final ItemStack[] RECIPE_FOUNDRY_MACHINE_II = new ItemStack[]{SupremeComponents.BLEND_MACHINE,
       SupremeCetrus.CETRUS_AQUA, SupremeComponents.BLEND_MACHINE, SupremeCetrus.CETRUS_VENTUS, Foundry.FOUNDRY_MACHINE,
       SupremeCetrus.CETRUS_LUX, SupremeCore.CORE_OF_ALLOY, SupremeCetrus.CETRUS_IGNIS, SupremeCore.CORE_OF_ALLOY};
