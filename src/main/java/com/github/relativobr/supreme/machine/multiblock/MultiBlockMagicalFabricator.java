@@ -28,7 +28,7 @@ public class MultiBlockMagicalFabricator extends MultiBlockMachine implements No
 
   public static final SlimefunItemStack MAGICAL_FABRICATOR = new SupremeItemStack("SUPREME_MULTIBLOCK_MAGICAL",
       Material.CRYING_OBSIDIAN, "&eMagical Factory", "", "&7&oYou can craft magical items here!", "",
-      "&aMultiblock Machine"
+      "&aMultiblock Machine");
   public static final RecipeType MACHINE_MAGICAL_FABRICATOR = new RecipeType(
       new NamespacedKey(Supreme.inst(), "SUPREME_MULTIBLOCK_MAGICAL_KEY"), MAGICAL_FABRICATOR);
 
