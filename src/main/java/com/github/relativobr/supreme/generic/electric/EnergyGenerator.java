@@ -100,10 +100,10 @@ public final class EnergyGenerator extends MenuBlock implements EnergyNetProvide
       if (this.generate == 0) {
         inv.replaceExistingItem(13, new CustomItemStack(
                 Material.RED_STAINED_GLASS_PANE,
-                "&c未发电",
-                "&7类型: &6" + this.type,
-                "&7已储存: &6" + UtilEnergy.format(getCharge(l)) + " J",
-                "&7容量: &6" + UtilEnergy.format(this.buffer) + " J"
+                "&cNot generating",
+                "&7Type: &6" + this.type,
+                "&7Stored: &6" + UtilEnergy.format(getCharge(l)) + " J",
+                "&7Capacity: &6" + UtilEnergy.format(this.buffer) + " J"
         ));
       } else {
         inv.replaceExistingItem(13, new CustomItemStack(
