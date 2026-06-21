@@ -56,15 +56,15 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
 
   public static final SlimefunItemStack TECH_GENERATOR = new SupremeItemStack(
       "SUPREME_TECH_GENERATOR", Material.LOOM,
-      "&b生物科技生成器",
+      "&bMob Tech Generator",
       "",
-      "&f使用&4卡片&f生成各种物品",
+      "&fUse &4cards&f to generate various items",
       "",
-      "&f使用&4生物科技&f来加速生产",
+      "&fUse &4mob tech&f to speed up production",
       "",
       LoreBuilder.radioactive(Radioactivity.LOW), "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-      UtilEnergy.energyPowerPerTick(2000), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerTick(2000), "", "&3Supreme Machine");
   public static final ItemStack[] RECIPE_TECH_GENERATOR = {SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE,
       SlimefunItems.REINFORCED_ALLOY_INGOT,
@@ -236,7 +236,7 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
 
       } else {
 
-        invalidStatus(inv, "&c无效的输入物品");
+        invalidStatus(inv, "&cInvalid input item");
 
       }
 
@@ -326,10 +326,10 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
         }
       } else {
         final int downConsumption = checkDownConsumption(this.getEnergyConsumption(), inv);
-        invalidStatus(inv, "&c电力不足 (需要: " + downConsumption + " J/粘液刻)");
+        invalidStatus(inv, "&cInsufficient power (Required: " + downConsumption + " J/Slimefun tick)");
       }
     } else {
-      invalidStatus(inv, "&c机器运行异常");
+      invalidStatus(inv, "&cMachine malfunction");
     }
   }
 
