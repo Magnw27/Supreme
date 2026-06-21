@@ -108,11 +108,11 @@ public final class EnergyGenerator extends MenuBlock implements EnergyNetProvide
       } else {
         inv.replaceExistingItem(13, new CustomItemStack(
                 Material.GREEN_STAINED_GLASS_PANE,
-                "&a发电中",
-                "&7类型: &6" + this.type,
-                "&7发电速度: &6" + UtilEnergy.format(this.generate) + " J/粘液刻",
-                "&7已储存: &6" + UtilEnergy.format(getCharge(l)) + " J",
-                "&7容量: &6" + UtilEnergy.format(this.buffer) + " J"
+                "&aGenerating",
+                "&7Type: &6" + this.type,
+                "&7Generation rate: &6" + UtilEnergy.format(this.generate) + " J/Slimefun tick",
+                "&7Stored: &6" + UtilEnergy.format(getCharge(l)) + " J",
+                "&7Capacity: &6" + UtilEnergy.format(this.buffer) + " J"
         ));
       }
     }
