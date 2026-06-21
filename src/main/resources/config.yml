@@ -9,7 +9,7 @@ options:
   base-time-virtual-garden: 15
   base-time-virtual-aquarium: 15
   base-time-mob-collector: 15
-  base-time-tech-generator: 1800
+  base-time-tech-generator: 600
   tech-generator-max-amount: 64
   mob-tech-enable-bee: true
   mob-tech-enable-iron-golem: true
@@ -981,8 +981,8 @@ power-section:
     capacitor-supreme-capacity: 1600000000
     generator-basic-ignis-energy: 2500
     generator-basic-ignis-buffer: 5000
-    generator-basic-ventus-energy: 2500
-    generator-basic-ventus-buffer: 5000
+    generator-basic-ventus-energy: 3000
+    generator-basic-ventus-buffer: 6000
     generator-basic-aqua-energy: 2500
     generator-basic-aqua-buffer: 5000
     generator-basic-lux-energy: 2500
