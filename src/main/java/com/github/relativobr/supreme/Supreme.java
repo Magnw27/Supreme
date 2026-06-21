@@ -138,41 +138,41 @@ public class Supreme extends JavaPlugin implements SlimefunAddon {
     instance = this;
 
     if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-      getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-      getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
+      getLogger().log(Level.SEVERE, "This plugin requires GuizhanLibPlugin to run!");
+      getLogger().log(Level.SEVERE, "Download it from: https://50l.cc/gzlib");
       getServer().getPluginManager().disablePlugin(this);
       return;
     }
 
     Supreme.inst().log(Level.INFO, "########################################");
-    Supreme.inst().log(Level.INFO, "      Supreme 2.0  作者:RelativoBR       ");
-    Supreme.inst().log(Level.INFO, "         汉化:SlimefunGuguProject        ");
+    Supreme.inst().log(Level.INFO, "       Supreme 3.0   by: asnoo       ");
+    Supreme.inst().log(Level.INFO, "      fork: SlimefunGuguProject        ");
     Supreme.inst().log(Level.INFO, "########################################");
 
     Config cfg = new Config(this);
     if (getSupremeOptions() == null) {
-      log(Level.SEVERE, "配置文件中 \"options\" 部分缺失, 请检查下载文件的完整性, 并汇报该问题!");
+      log(Level.SEVERE, "The \"options\" section in the configuration file is missing, please check the integrity of the downloaded file and report this issue!");
       inst().onDisable();
       return;
     }
 
     if (getSupremeOptions().isAutoUpdate() && getDescription().getVersion().startsWith("Build")) {
-      Supreme.inst().log(Level.INFO, "自动更新: 已启用");
+      Supreme.inst().log(Level.INFO, "Auto-update: Enabled");
       GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "Supreme", "main");
     } else {
-      Supreme.inst().log(Level.INFO, "自动更新: 已禁用");
+      Supreme.inst().log(Level.INFO, "Auto-update: Disabled");
     }
 
     // localization
-    Supreme.inst().log(Level.INFO, "已加载语言: " + getSupremeOptions().getLang());
+    Supreme.inst().log(Level.INFO, "Loaded language: " + getSupremeOptions().getLang());
     getLocalization();
 
     // check Compatibily Legacy (SupremeExpansion)
     if (getSupremeOptions().isUseLegacySupremeexpansionItemId()) {
-      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID兼容: 已启用");
+      Supreme.inst().log(Level.INFO, "SupremeExpansion 1.0 Item ID Compatibility: Enabled");
       getLegacyItem();
     } else {
-      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID兼容: 已禁用");
+      Supreme.inst().log(Level.INFO, "SupremeExpansion 1.0 Item ID Compatibility: Disabled");
     }
 
     MainSetup.setup(this);
