@@ -25,31 +25,31 @@ import org.bukkit.inventory.ItemStack;
 
 public class ElectricGearFabricator extends FlexItemContainerMachine {
 
-  public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_I",
-      Material.SMITHING_TABLE, "&b电力装备组装机", "", "&f合成装备", "",
+public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_I",
+      Material.SMITHING_TABLE, "&bElectric Gear Assembler", "", "&fCraft equipment", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1),
-      UtilEnergy.energyPowerPerSecond(20), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(20), "", "&3Supreme Machine");
 
-  public static final ItemStack[] RECIPE_ELECTRIC_GEAR_MACHINE = new ItemStack[]{
+public static final ItemStack[] RECIPE_ELECTRIC_GEAR_MACHINE = new ItemStack[]{
       new ItemStack(Material.ENCHANTING_TABLE), new ItemStack(Material.ANVIL), new ItemStack(Material.SMITHING_TABLE),
       SupremeComponents.PETRIFIER_MACHINE, SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.PETRIFIER_MACHINE,
       SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.CARBONADO_EDGED_CAPACITOR, SlimefunItems.ELECTRIC_MOTOR};
 
-  public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE_II = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_II",
-      Material.SMITHING_TABLE, "&b电力装备组装机 II", "", "&f更快地合成装备", "",
+public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE_II = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_II",
+      Material.SMITHING_TABLE, "&bElectric Gear Assembler II", "", "&fCraft equipment faster", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(5),
-      UtilEnergy.energyPowerPerSecond(100), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(100), "", "&3Supreme Machine");
 
-  public static final ItemStack[] RECIPE_ELECTRIC_GEAR_MACHINE_II = new ItemStack[]{
+public static final ItemStack[] RECIPE_ELECTRIC_GEAR_MACHINE_II = new ItemStack[]{
       SupremeComponents.CONVEYANCE_MACHINE, SupremeCetrus.CETRUS_LUX, SupremeComponents.CONVEYANCE_MACHINE,
       SupremeComponents.INDUCTOR_MACHINE, ElectricGearFabricator.ELECTRIC_GEAR_MACHINE,
       SupremeComponents.INDUCTOR_MACHINE, SupremeComponents.BLEND_MACHINE, SupremeCetrus.CETRUS_IGNIS,
       SupremeComponents.BLEND_MACHINE};
 
-  public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE_III = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_III",
-      Material.SMITHING_TABLE, "&b电力装备组装机 III", "", "&f更快地合成装备", "",
+public static final SlimefunItemStack ELECTRIC_GEAR_MACHINE_III = new SupremeItemStack("SUPREME_ELECTRIC_GEAR_III",
+      Material.SMITHING_TABLE, "&bElectric Gear Assembler III", "", "&fCraft equipment faster", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(15),
-      UtilEnergy.energyPowerPerSecond(300), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(300), "", "&3Supreme Machine");
 
   public static final ItemStack[] RECIPE_ELECTRIC_GEAR_MACHINE_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeCetrus.CETRUS_LUX, SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
