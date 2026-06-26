@@ -112,6 +112,21 @@ public class SimpleCard {
   public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_QUARTZ",
       Material.MUSIC_DISC_13, "&bCard Machine Quartz", "", "&fChange to Production Quartz", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+  
+
+  public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_DIAMOND_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block DM", "", "&fChange to Production Blcok dm", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_GOLD_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block gold", "", "&fChange to Production Blcok gold", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+   public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_EMERALD_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block DM", "", "&fChange to Production Blcok dm", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
 
 
   public static final SlimefunItemStack CARD_QUARTZ_BLOCK = new SupremeItemStack("SUPREME_CARD_QUARTZ_BLOCK",
