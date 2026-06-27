@@ -114,18 +114,48 @@ public class SimpleCard {
       LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
   
 
-  public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_DIAMOND_BLOCK",
-      Material.MUSIC_DISC_13, "&bCard Machine Block DM", "", "&fChange to Production Blcok dm", "",
+  public static final SlimefunItemStack CARD_DIAMOND_BLOCK = new SupremeItemStack("SUPREME_CARD_DIAMOND_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block DIAMOND", "", "&fChange to Production Blcok DIAMOND", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
 
 
-  public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_GOLD_BLOCK",
+  public static final SlimefunItemStack CARD_GOLD_BLOCK = new SupremeItemStack("SUPREME_CARD_GOLD_BLOCK",
       Material.MUSIC_DISC_13, "&bCard Machine Block gold", "", "&fChange to Production Blcok gold", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
 
 
-   public static final SlimefunItemStack CARD_QUARTZ = new SupremeItemStack("SUPREME_CARD_EMERALD_BLOCK",
-      Material.MUSIC_DISC_13, "&bCard Machine Block DM", "", "&fChange to Production Blcok dm", "",
+  public static final SlimefunItemStack CARD_EMERALD_BLOCK = new SupremeItemStack("SUPREME_CARD_EMERALD_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block EMERALD", "", "&fChange to Production Blcok EMERALD", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_LAPIS_BLOCK = new SupremeItemStack("SUPREME_CARD_LAPIS_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block LAPIS", "", "&fChange to Production Blcok LAPIS", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_REDSTONE_BLOCK = new SupremeItemStack("SUPREME_CARD_REDSTONE_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block REDSTONE", "", "&fChange to Production Blcok REDSTONE", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_IRON_BLOCK = new SupremeItemStack("SUPREME_CARD_IRON_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block IRON", "", "&fChange to Production Blcok IRON", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_COAL_BLOCK = new SupremeItemStack("SUPREME_CARD_COAL_BLOCK",
+      Material.MUSIC_DISC_13, "&bCard Machine Block COAL", "", "&fChange to Production Blcok COAL", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_DIRT = new SupremeItemStack("SUPREME_CARD_DIRT",
+      Material.MUSIC_DISC_13, "&bCard Machine Block DIRT", "", "&fChange to Production Blcok DIRT", "",
+      LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
+
+
+  public static final SlimefunItemStack CARD_ENDER_PEARL = new SupremeItemStack("SUPREME_CARD_ENDER_PEARL",
+      Material.MUSIC_DISC_13, "&bCard Machine ENDER PERAL ASU", "", "&fChange to Production ENDER PEARL", "",
       LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), "", "&3Supreme Component");
 
 
