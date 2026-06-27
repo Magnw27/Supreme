@@ -59,17 +59,17 @@ public class SetupSimpleCard {
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_QUARTZ, Material.QUARTZ, Material.QUARTZ);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_DIAMOND_BLOCK, Material.QUARTZ, Material.DIAMOND_BLOCK);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_DIAMOND_BLOCK, Material.DIAMOND, Material.DIAMOND_BLOCK);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_GOLD_BLOCK, Material.QUARTZ, Material.GOLD_BLOCK);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_GOLD_BLOCK, Material.GOLD_INGOT, Material.GOLD_BLOCK);
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_EMERALD_BLOCK, Material.EMERALD, Material.EMERALD_BLOCK);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS_BLOCK, Material.LAPIS, Material.LAPIS_BLOCK);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS_BLOCK, Material.LAPIS_LAZULI, Material.LAPIS_BLOCK);
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_REDSTONE_BLOCK, Material.REDSTONE, Material.REDSTONE_BLOCK);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_IRON_BLOCK, Material.IRON, Material.IRON_BLOCK);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_IRON_BLOCK, Material.IRON_INGOT, Material.IRON_BLOCK);
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_COAL_BLOCK, Material.COAL, Material.COAL_BLOCK);
 
@@ -79,7 +79,7 @@ public class SetupSimpleCard {
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_QUARTZ_BLOCK, Material.QUARTZ_BLOCK, Material.QUARTZ_BLOCK);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS, Material.LAPIS_LAZULI, Material.LAPIS_LAZULI);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS, Material.LAPIS_LAZULI_BLOCK, Material.LAPIS_LAZULI);
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_REDSTONE, Material.REDSTONE_BLOCK, Material.REDSTONE);
 
