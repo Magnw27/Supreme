@@ -79,7 +79,7 @@ public class SetupSimpleCard {
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_QUARTZ_BLOCK, Material.QUARTZ_BLOCK, Material.QUARTZ_BLOCK);
 
-    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS, Material.LAPIS_LAZULI_BLOCK, Material.LAPIS_LAZULI);
+    TechGenerator.preSetup(plugin, SimpleCard.CARD_LAPIS, Material.LAPIS_BLOCK, Material.LAPIS_LAZULI);
 
     TechGenerator.preSetup(plugin, SimpleCard.CARD_REDSTONE, Material.REDSTONE_BLOCK, Material.REDSTONE);
 
